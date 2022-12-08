@@ -9,4 +9,4 @@ only_common_priority = priority ∘ only ∘ common
 solution1 = sum(only_common_priority, Iterators.partition.(all_rucksacks, length.(all_rucksacks) .÷ 2))
 solution2 = sum(only_common_priority, Iterators.partition(all_rucksacks, 3))
 
-@show (solution1, solution2);
+@show solution1, solution2;
